@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Right Bite: The Right Choice for Every Bite. Protein-rich healthy breakfast bowls and fresh drinks, delivered near Infopark, Smart City and nearby gyms."><title>Right Bite — The Right Choice for Every Bite</title><link rel="icon" href="right-bite-logo.png"><meta name="theme-color" content="#2e7244"><meta property="og:type" content="website"><meta property="og:title" content="Right Bite: The Right Choice for Every Bite"><meta property="og:description" content="Protein-rich healthy breakfast bowls with calories and protein on every bowl. Order on WhatsApp."><meta property="og:image" content="right-bite-logo.png"><!-- after hosting, change og:image to the full address, e.g. https://YOURNAME.github.io/REPO/right-bite-logo.png --><meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--site-primary:#245b3e;--site-secondary:#e9f0df;--site-background:#fbfaf5;--site-on-primary:#ffffff;--site-on-secondary:#233e2d;--site-on-background:#202c22;--site-font-body:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--site-font-heading:Georgia,"Times New Roman",serif;--site-heading-scale:1;--site-spacing-scale:1;--site-radius-scale:1;--site-decoration-opacity:1;color-scheme:light dark}
+*{box-sizing:border-box}body{margin:0;font-family:var(--site-font-body);background:light-dark(#fbfaf5,#151a16);color:light-dark(#202c22,#edf3e9)}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh;background-color:light-dark(var(--site-background),#151a16);color:light-dark(var(--site-on-background),#edf3e9);border-radius:0}.topline{background:var(--site-primary);color:white;text-align:center;padding:9px 16px;font-size:12px;letter-spacing:.08em}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(18px,5vw,76px);border-bottom:1px solid light-dark(#e5e5d9,#333a32);position:sticky;top:0;background:light-dark(#fbfaf5,rgba(21,26,22,.96));backdrop-filter:blur(12px);z-index:10}.logo{font-weight:900;letter-spacing:-1.8px;font-size:27px;color:var(--site-primary);white-space:nowrap}.logo span{color:#d58b43}.navlinks{display:flex;gap:28px;align-items:center}.navlinks a{font-size:13px;text-decoration:none;color:inherit}.navlinks a:hover{color:#d58b43}.navright{display:flex;align-items:center;gap:10px}.iconbtn{border:1px solid #d8ddcf;background:transparent;color:inherit;border-radius:99px;padding:10px 15px}.cartbtn{background:var(--site-primary);color:white;border:0;border-radius:99px;padding:11px 17px;font-weight:700}.hero{padding:56px clamp(18px,5vw,76px) 60px;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center;max-width:1440px;margin:auto}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#b26e32;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:26px;height:1px;background:#b26e32}.hero h1{font-family:var(--site-font-heading);font-size:clamp(50px,6.4vw,88px);font-weight:500;letter-spacing:-3.8px;line-height:.98;margin:22px 0}.hero h1 em{color:#b26e32;font-weight:500}.hero p{max-width:470px;line-height:1.8;color:light-dark(#647064,#b4c0b3);font-size:15px}.heroactions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.primary,.secondary{padding:14px 22px;border-radius:99px;border:0;font-weight:750;font-size:13px}.primary{background:var(--site-primary);color:white}.secondary{border:1px solid #d6dccf;background:transparent;color:inherit}.trust{display:flex;gap:20px;align-items:center;margin-top:30px;font-size:11px;color:light-dark(#667264,#a9b4a6);flex-wrap:wrap}.trust span{display:flex;gap:7px;align-items:center}.heroimage{position:relative;min-height:440px;border-radius:48% 48% 18px 18px;overflow:hidden;background:#e4e8d8}.heroimage img{width:100%;height:100%;min-height:440px;object-fit:cover;display:block}.heroimage:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.4))}.image-note{position:absolute;z-index:1;bottom:23px;left:25px;color:#fff;font-family:var(--site-font-heading);font-size:24px}.floatnote{position:absolute;right:-8px;top:32px;background:#fffaf0;color:#2d4d35;padding:15px 18px;border-radius:14px;box-shadow:0 8px 30px #0001;transform:rotate(4deg);font-size:12px;font-weight:750}.section{padding:66px clamp(18px,5vw,76px);max-width:1440px;margin:auto}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.sectionhead h2{font-family:var(--site-font-heading);font-size:clamp(32px,4vw,48px);font-weight:500;letter-spacing:-1.3px;margin:10px 0 0}.sectionhead p{color:light-dark(#657164,#b4c0b3);font-size:13px;line-height:1.6;max-width:380px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.cat{border:1px solid light-dark(#e0e3d8,#343c33);border-radius:18px;padding:20px;background:light-dark(#fffefa,#202720);display:flex;align-items:center;gap:13px;text-align:left;color:inherit;transition:.2s}.cat:hover,.cat.active{border-color:var(--site-primary);background:light-dark(#edf2e6,#263a2b);transform:translateY(-2px)}.cat .emoji{width:47px;height:47px;border-radius:50%;background:var(--site-secondary);display:grid;place-items:center;font-size:23px}.cat strong{display:block;font-size:14px}.cat small{display:block;margin-top:4px;color:light-dark(#748072,#b2bdb0);font-size:11px}.filters{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:26px 0}.tabs{display:flex;gap:8px;flex-wrap:wrap}.tab{border:1px solid light-dark(#dce1d5,#3b453b);background:transparent;color:inherit;border-radius:99px;padding:9px 16px;font-size:12px}.tab.active{background:var(--site-primary);border-color:var(--site-primary);color:white}.search{border:1px solid light-dark(#dce1d5,#3b453b);background:transparent;border-radius:99px;padding:11px 15px;min-width:220px;color:inherit;outline-offset:3px}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product{border:1px solid light-dark(#e6e7dd,#343c33);border-radius:18px;overflow:hidden;background:light-dark(#fffefa,#202720);transition:transform .2s}.product:hover{transform:translateY(-4px)}.foodimg{height:190px;position:relative;overflow:hidden;background:#e8e8d9}.foodimg img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;top:12px;left:12px;background:#fffaf0;color:#31543b;border-radius:99px;padding:6px 10px;font-size:10px;font-weight:800}.productbody{padding:15px}.producttitle{font-size:15px;font-weight:800;margin:0 0 7px}.desc{font-size:11px;line-height:1.6;color:light-dark(#738071,#b4beb2);min-height:34px}.macros{display:flex;gap:7px;margin:12px 0;flex-wrap:wrap}.macro{font-size:10px;padding:5px 7px;border-radius:6px;background:light-dark(#f0f2e9,#2b342b);color:light-dark(#5b6957,#d0dbca)}.productfoot{display:flex;align-items:center;justify-content:space-between;margin-top:13px}.price{font-weight:850;font-size:17px}.price small{font-weight:500;font-size:10px;color:light-dark(#788174,#adb7a9)}.add{border:0;border-radius:50%;width:36px;height:36px;background:var(--site-primary);color:white;font-size:23px;line-height:1}.noresults{grid-column:1/-1;text-align:center;padding:45px;color:#71806f}.banner{margin:30px clamp(18px,5vw,76px);border-radius:24px;background:var(--site-primary);color:white;padding:38px clamp(22px,4vw,56px);display:flex;align-items:center;justify-content:space-between;gap:24px;overflow:hidden}.banner h2{font-family:var(--site-font-heading);font-size:clamp(28px,4vw,44px);font-weight:500;margin:8px 0}.banner p{color:#e2eadf;font-size:13px;line-height:1.7;max-width:540px}.banner .secondary{border-color:#ffffff8c;color:white;white-space:nowrap}.howgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.how{padding:25px;border-top:1px solid light-dark(#d9dfd2,#394338)}.number{font-family:var(--site-font-heading);font-size:32px;color:#b26e32}.how h3{font-size:16px}.how p{font-size:13px;line-height:1.8;color:light-dark(#6d796b,#b4c0b1)}.footer{background:light-dark(#edf1e6,#1b231c);padding:38px clamp(18px,5vw,76px);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:12px;color:light-dark(#687565,#b4c0b3)}.footer strong{color:var(--site-primary)}.overlay{position:fixed;inset:0;background:#10171088;z-index:30;opacity:0;pointer-events:none;transition:.2s}.overlay.open{opacity:1;pointer-events:auto}.drawer{position:fixed;right:0;top:0;height:100%;width:min(440px,100%);background:light-dark(#fbfaf5,#171d18);color:inherit;z-index:31;transform:translateX(105%);transition:.28s;display:flex;flex-direction:column;box-shadow:-10px 0 40px #0002}.drawer.open{transform:translateX(0)}.drawhead{padding:23px;border-bottom:1px solid light-dark(#e0e4d8,#343c33);display:flex;justify-content:space-between;align-items:center}.drawhead h2{font-family:var(--site-font-heading);font-weight:500;margin:0;font-size:27px}.close{border:0;background:transparent;color:inherit;font-size:25px}.cartitems{padding:18px 22px;overflow:auto;flex:1}.cartrow{display:grid;grid-template-columns:62px 1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid light-dark(#e5e7dd,#343c33);align-items:center}.cartrow img{width:62px;height:62px;object-fit:cover;border-radius:12px}.cartrow strong{font-size:13px;display:block}.cartrow small{color:#879184;font-size:11px}.qty{display:flex;align-items:center;gap:8px;margin-top:8px}.qty button{width:24px;height:24px;border-radius:50%;border:1px solid #cdd5c8;background:transparent;color:inherit}.remove{font-size:11px;color:#b26e32;background:none;border:0;margin-left:5px}.cartbottom{padding:20px 22px;border-top:1px solid light-dark(#e0e4d8,#343c33)}.total{display:flex;justify-content:space-between;font-weight:800;font-size:18px;margin-bottom:14px}.cartbottom .primary{width:100%}.empty{text-align:center;padding:60px 10px;color:#7a8777}.empty .big{font-size:44px}.checkout{padding:20px 22px;overflow:auto;flex:1}.checkout label{display:block;font-size:12px;font-weight:750;margin:13px 0 6px}.checkout input,.checkout textarea,.checkout select{width:100%;border:1px solid light-dark(#d9dfd2,#3d473c);border-radius:10px;padding:12px;background:transparent;color:inherit;outline-offset:2px}.checkout textarea{min-height:70px;resize:vertical}.checkout .primary{width:100%;margin-top:18px}.hint{font-size:11px;line-height:1.6;color:#879184;margin-top:12px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#213f2c;color:white;border-radius:99px;padding:12px 18px;font-size:12px;z-index:50;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:950px){.navlinks{display:none}.hero{grid-template-columns:1fr 1fr;gap:24px}.heroimage,.heroimage img{min-height:370px}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.categories{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.nav{height:65px;padding:0 16px}.logo{font-size:24px}.navright .iconbtn{display:none}.hero{grid-template-columns:1fr;padding-top:35px;gap:30px}.hero h1{font-size:58px}.heroimage,.heroimage img{min-height:320px}.floatnote{right:10px}.section{padding-top:46px;padding-bottom:46px}.sectionhead{align-items:start;flex-direction:column;gap:4px}.categories{gap:8px}.cat{padding:13px 10px;gap:9px}.cat .emoji{width:38px;height:38px;font-size:19px}.cat strong{font-size:12px}.cat small{font-size:10px}.filters{align-items:stretch;flex-direction:column}.search{width:100%}.products{gap:10px}.foodimg{height:145px}.productbody{padding:11px}.producttitle{font-size:13px}.desc{font-size:10px}.macro{font-size:9px}.price{font-size:15px}.banner{margin-top:10px;flex-direction:column;align-items:flex-start}.howgrid{grid-template-columns:1fr;gap:0}.footer{flex-direction:column}.trust{gap:12px}}
+</style></head>
+<body><div class="app" id="top">
+<div class="topline" id="topline"></div>
+<header class="nav">
+
+<a class="logo" href="#top" aria-label="Right Bite Home">
+  <img src="right-bite-logo.png" alt="Right Bite Logo">
+</a>
+<!--<a class="logo" href="#top" style="text-decoration:none">right<span>•</span>bite</a>*/-->
+
+<nav class="navlinks"><a href="#menu">Menu</a><a href="#how">How it works</a><a href="#plans">Plans</a><a href="#faq">FAQ</a></nav><div class="navright"><button class="iconbtn" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Explore menu ↘</button><button class="cartbtn" onclick="openCart()">Bag <span id="cartcount">0</span> · <span id="navtotal">₹0</span></button></div></header>
+<main><section class="slider" aria-roledescription="carousel" aria-label="Right Bite highlights"><div class="slides" id="slides" tabindex="0"></div><button class="slidenav prev" aria-label="Previous slide" onclick="goSlide(-1)">‹</button><button class="slidenav next" aria-label="Next slide" onclick="goSlide(1)">›</button><div class="dots" id="dots"></div></section>
+<section class="section" id="menu"><div class="sectionhead"><div><div class="eyebrow">The good stuff</div><h2>What are you craving?</h2></div><p>Colourful, nourishing, and full of flavour. Choose a meal moment and let us handle the delicious part.</p></div><div class="categories"><button class="cat active" data-cat="All" onclick="setCategory('All')"><span class="emoji">🥗</span><span><strong>All the good stuff</strong><small>See everything</small></span></button><button class="cat" data-cat="Breakfast" onclick="setCategory('Breakfast')"><span class="emoji">🍳</span><span><strong>Breakfast</strong><small>Start bright</small></span></button><button class="cat" data-cat="Lunch" onclick="setCategory('Lunch')"><span class="emoji">🥙</span><span><strong>Lunch</strong><small>Midday goodness</small></span></button><button class="cat" data-cat="Dinner" onclick="setCategory('Dinner')"><span class="emoji">🍲</span><span><strong>Dinner</strong><small>End on a good note</small></span></button><button class="cat" data-cat="Beverages" onclick="setCategory('Beverages')"><span class="emoji">🥤</span><span><strong>Beverages</strong><small>Fresh drinks</small></span></button></div><div class="filters"><div class="tabs"><button class="tab active" data-tab="All" onclick="setCategory('All')">All meals</button><button class="tab" data-tab="Breakfast" onclick="setCategory('Breakfast')">Breakfast</button><button class="tab" data-tab="Lunch" onclick="setCategory('Lunch')">Lunch</button><button class="tab" data-tab="Dinner" onclick="setCategory('Dinner')">Dinner</button><button class="tab" data-tab="Beverages" onclick="setCategory('Beverages')">Beverages</button></div><input class="search" id="search" placeholder="⌕  Search your next favourite…" oninput="renderProducts()" aria-label="Search dishes"/></div><div class="products" id="products"></div><p class="allergen">Allergy note: our bowls contain nuts and seeds and may contain milk (milk soak, protein powder). Please tell us about any allergy when you order. *Calories and protein are approximate.</p></section>
+<div class="band"><div><i>📍</i><span><b>We deliver around</b><span class="siteareas"></span></span></div><div><i>🌙</i><span><b>Order by <span class="sitecut"></span></b>for next-morning delivery</span></div><div><i>🕖</i><span><b>Delivery time</b><span class="sitewin"></span></span></div></div>
+<section class="xs" id="how"><div class="xhead"><div class="eyebrow">How it works</div><h2>Your breakfast in 3 easy steps</h2><p>No cooking, no counting, no stress.</p></div><div class="steps">
+<article class="step"><span class="n">1</span><svg viewBox="0 0 220 170" aria-hidden="true"><ellipse cx="110" cy="152" rx="72" ry="9" fill="#2e72441f"/><path d="M30 78h160a80 72 0 0 1-160 0z" fill="#2e7244"/><path d="M38 90h144" stroke="#fff" stroke-opacity=".3" stroke-width="3"/><circle cx="72" cy="66" r="22" fill="#f39a16"/><circle cx="112" cy="56" r="26" fill="#e8553d"/><circle cx="150" cy="68" r="20" fill="#7bad32"/><circle cx="96" cy="74" r="12" fill="#f6c453"/><path d="M112 30c-6-16 6-26 18-26 0 14-6 24-18 26z" fill="#7bad32"/><path d="M98 34c-12-6-16-18-10-28 12 4 16 14 10 28z" fill="#2e7244"/></svg><h3>Pick your bowl</h3><p>Choose from our menu. Every bowl shows its calories and protein.</p></article>
+<article class="step"><span class="n">2</span><svg viewBox="0 0 120 100" aria-hidden="true"><rect x="14" y="20" width="92" height="10" rx="5" fill="#2e72442b"/><rect x="14" y="45" width="92" height="10" rx="5" fill="#2e72442b"/><rect x="14" y="70" width="92" height="10" rx="5" fill="#2e72442b"/><circle cx="76" cy="25" r="11" fill="#f39a16"/><circle cx="40" cy="50" r="11" fill="#2e7244"/><circle cx="88" cy="75" r="11" fill="#7bad32"/></svg><h3>Make it yours</h3><p>Soak in water or milk, with or without protein powder, and add honey.</p></article>
+<article class="step"><span class="n">3</span><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M14 14h92a6 6 0 0 1 6 6v46a6 6 0 0 1-6 6H48l-20 18V72H14a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6z" fill="#2e7244"/><circle cx="38" cy="43" r="6" fill="#fff"/><circle cx="60" cy="43" r="6" fill="#f39a16"/><circle cx="82" cy="43" r="6" fill="#fff"/></svg><h3>Confirm on WhatsApp</h3><p>Send your order to our team. We confirm it and deliver it fresh.</p></article></div></section>
+<section class="xs tint" id="about"><div class="why"><div class="art"><svg viewBox="0 0 220 170" aria-hidden="true"><ellipse cx="110" cy="152" rx="72" ry="9" fill="#2e72441f"/><path d="M30 78h160a80 72 0 0 1-160 0z" fill="#2e7244"/><path d="M38 90h144" stroke="#fff" stroke-opacity=".3" stroke-width="3"/><circle cx="72" cy="66" r="22" fill="#f39a16"/><circle cx="112" cy="56" r="26" fill="#e8553d"/><circle cx="150" cy="68" r="20" fill="#7bad32"/><circle cx="96" cy="74" r="12" fill="#f6c453"/><path d="M112 30c-6-16 6-26 18-26 0 14-6 24-18 26z" fill="#7bad32"/><path d="M98 34c-12-6-16-18-10-28 12 4 16 14 10 28z" fill="#2e7244"/></svg></div><div><div class="eyebrow">Why Right Bite</div><h2 class="whyh">Healthy food you can actually count on</h2>
+<div class="tile"><i>🔢</i><div><b>Know every number</b><p>Calories and protein on every bowl, so you can plan your day and your workout.</p></div></div>
+<div class="tile"><i>🥣</i><div><b>Your bowl, your way</b><p>Water or milk soak, with or without protein powder, plus honey if you like.</p></div></div>
+<div class="tile"><i>🏠</i><div><b>Made fresh in our kitchen</b><p>Prepared in small batches and delivered near Infopark, Smart City and nearby gyms.</p></div></div><div id="trustrow" class="trust"></div></div></div></section>
+<section class="xs" id="plans"><div class="xhead"><div class="eyebrow">Plans</div><h2>Never skip breakfast again</h2><p>Save more with a weekly or monthly pack. Tell us your bowl choice on WhatsApp.</p></div><div class="plans" id="planlist"></div></section>
+<section class="xs tint" id="reviews" hidden><div class="xhead"><div class="eyebrow">Reviews</div><h2>What our customers say</h2></div><div class="reviews" id="reviewlist"></div></section>
+<section class="xs" id="faq"><div class="xhead"><div class="eyebrow">FAQ</div><h2>Good to know</h2></div><div class="faq">
+<details><summary>What is in the breakfast bowl?</summary><p>Oats, chia, pumpkin and sunflower seeds, black raisins and almonds, soaked with protein powder and topped with fresh fruit such as banana, apple and pomegranate.</p></details>
+<details><summary>How do I store it and how long does it stay fresh?</summary><p>Keep it refrigerated and eat it on the day of delivery. The label on your bowl shows when to consume it by.</p></details>
+<details><summary>Can I choose milk or skip the protein powder?</summary><p>Yes. Choose water or milk soak, with or without protein powder, and add honey. The price and nutrition update as you choose.</p></details>
+<details><summary>How and when do I order?</summary><p>Add your bowl to the bag and send the order on WhatsApp by <span class="sitecut"></span> for delivery the next morning. Our team confirms the order and payment details.</p></details>
+<details><summary>Can I cancel or change my order?</summary><p>Message us on WhatsApp before the <span class="sitecut"></span> cut-off and we will update your order.</p></details>
+<details><summary>I have an allergy. Is it safe?</summary><p>Our bowls contain nuts and seeds and may contain milk. Please tell us about any allergy before you order.</p></details></div></section>
+<section class="xs cta"><h2>Ready for a better breakfast?</h2><p>Order your bowl tonight and start tomorrow right.</p><div class="heroactions"><button class="primary" onclick="goMenu()">Order a bowl</button><a class="secondary" id="ctawa" target="_blank" rel="noopener">Ask us on WhatsApp</a></div></section>
+<a class="wa" id="wafloat" target="_blank" rel="noopener" aria-label="Chat with Right Bite on WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M4 5h24v17H14l-7 6v-6H4z"/></svg></a>
+</main>
+
+<!--<footer class="footer"><div>
+<div class="logo">right<span>•</span>bite</div>-->
+
+<footer class="footer">
+  <div>
+    <div class="footer-logo">
+      <img src="right-bite-logo.png" alt="Right Bite Logo">
+    </div>
+
+<p>The Right Choice for Every Bite.</p></div><div>Have a question?  <a
+    href="https://wa.me/919020338694"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color:inherit;font-weight:700;text-decoration:none;"
+  >
+    Chat with our team on WhatsApp
+  </a>
+
+  <br>
+
+  <span style="display:block;margin-top:8px">
+    © <span id="year"></span> Right Bite
+  </span>
+</div>
+</footer>
+
+</div><div class="overlay" id="overlay" onclick="closeCart()"></div><aside class="drawer" id="drawer" aria-label="Shopping bag"><div class="drawhead"><h2 id="drawtitle">Your good-food bag</h2><button class="close" onclick="closeCart()" aria-label="Close bag">×</button></div><div id="cartview" style="display:flex;flex-direction:column;flex:1;min-height:0"><div class="cartitems" id="cartitems"></div><div class="cartbottom" id="cartbottom"><div class="total"><span>Subtotal</span><span id="subtotal">₹0</span></div><button class="primary" onclick="showCheckout()">Continue to order →</button><p class="hint">Delivery charges, availability, and final pricing are confirmed by our team.</p></div></div><div class="checkout" id="checkout" style="display:none"><form id="orderform" onsubmit="sendOrder(event)"><label for="customer">Your name *</label><input id="customer" required placeholder="Name for the order"/><label for="phone">Your phone number *</label><div class="phonerow"><input id="ccode" value="+91" inputmode="tel" autocomplete="tel-country-code" maxlength="4" aria-label="Country code"/><input id="phone" required type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="10-digit mobile number" aria-describedby="phoneerr"/></div><div class="fielderr" id="phoneerr" role="alert"></div><label for="address">Delivery address *</label><textarea id="address" required placeholder="House / street / area / city"></textarea><label for="delivery">Preferred meal time</label><select id="delivery"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Flexible / please confirm</option></select><label for="notes">Anything else? (optional)</label><textarea id="notes" placeholder="Allergies, preferences, delivery instructions…"></textarea><button class="primary" type="submit">Order on WhatsApp ↗</button><button type="button" class="secondary" style="width:100%;margin-top:10px" onclick="backToBag()">← Back to bag</button><p class="hint">This opens WhatsApp with your order details. Your order is not confirmed until the manager replies. Please mention any allergies directly to the team.</p><p class="allergen">Contains nuts and seeds; may contain milk. Tell us about any allergy in the notes.</p></form></div></aside><div class="toast" id="toast" role="status"></div>
+<div class="overlay" id="coverlay" onclick="closeCustomize()"></div><div class="custom" id="custom" role="dialog" aria-modal="true" aria-labelledby="customtitle"></div>
+
+
+
+
+<script>
+// ---- Bowl customisation: edit labels, prices and nutrition here ----
+// price = change in rupees (can be negative), cal = change in kcal, protein = change in grams (approximate)
+const BOWL_OPTIONS=[
+ {id:'base',title:'Choose your bowl',type:'single',choices:[
+  {id:'water',name:'Soaked in water, with protein powder',label:'Water soak, with protein powder (main)',price:0,cal:0,protein:0},
+  {id:'milk',name:'Soaked in milk, with protein powder',label:'Milk soak, with protein powder',price:15,cal:120,protein:6},
+  {id:'milknp',name:'Soaked in milk, no protein powder',label:'Milk soak, without protein powder',price:-25,cal:0,protein:-19}]},
+ {id:'extras',title:'Add-on',type:'multi',choices:[
+  {id:'honey',name:'Honey',label:'Add honey (1 tsp), popular without protein powder',price:10,cal:25,protein:0}]}
+];
+// Demo menu and sample prices; replace with your actual menu and pricing before launch.
+const FALLBACK_DISHES=[
+{id:1,name:'Protein Oats Breakfast Bowl',cat:'Breakfast',price:149,cal:400,protein:'30g protein',tag:'Bestseller',desc:'Oats, chia, seeds, almonds & protein, soaked overnight and topped with fresh fruit.',options:BOWL_OPTIONS,status:'available',available:true,icon:'🥣',img:''},
+{id:2,name:'Bread with Peanut Butter',cat:'Breakfast',price:0,cal:0,protein:'',tag:'',desc:'Bread with peanut butter.',status:'soon',available:false,icon:'🍞',img:''},
+{id:3,name:'Mixed Fruits',cat:'Breakfast',price:0,cal:0,protein:'',tag:'',desc:'Fresh mixed fruits.',status:'soon',available:false,icon:'🍓',img:''},
+{id:4,name:'Egg Salad',cat:'Breakfast',price:0,cal:0,protein:'',tag:'',desc:'A fresh egg salad.',status:'soon',available:false,icon:'🥚',img:''},
+{id:5,name:'Banana Smoothie',cat:'Beverages',price:0,cal:0,protein:'',tag:'',desc:'A fresh banana smoothie.',status:'soon',available:false,icon:'🍌',img:''},
+{id:6,name:'Avocado Smoothie',cat:'Beverages',price:0,cal:0,protein:'',tag:'',desc:'A fresh avocado smoothie.',status:'soon',available:false,icon:'🥑',img:''},
+{id:7,name:'Pineapple Juice (no sugar)',cat:'Beverages',price:0,cal:0,protein:'',tag:'',desc:'Pineapple juice with no added sugar.',status:'soon',available:false,icon:'🍍',img:''}];
+function dishIcon(d){return d.icon||({Breakfast:'🥣',Lunch:'🍱',Dinner:'🍲',Beverages:'🥤'}[d.cat]||'🍽️')}
+let dishes=FALLBACK_DISHES;
+let menuReady=false;
+
+/* ---- Site text you can edit ---- */
+const SITE={cutoff:'9 PM',areas:'Infopark, Smart City & nearby gyms',window:'7:00 to 9:00 AM',wa:'919020338694',fssai:'',coach:'',maxItems:6};
+const PLANS=[{name:'Weekly pack',n:6,price:799,note:'6 breakfast bowls'},{name:'Monthly pack',n:26,price:3299,note:'26 breakfast bowls',best:true}];
+const REVIEWS=[]; /* add {name:'Name',text:'Review'} after you have real, permitted reviews */
+function waLink(t){return 'https://wa.me/'+SITE.wa+'?text='+encodeURIComponent(t)}
+function limitMsg(){return 'Maximum '+SITE.maxItems+' items per order. For bigger orders, message us on WhatsApp.'}
+
+/* ---- Carousel slides: replace img with your own photos (e.g. 'images/slide1.jpg') ---- */
+const SLIDES=[
+ {img:'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1600&q=80',
+  kicker:'The Right Choice for Every Bite',
+  title:'A high-protein breakfast, ready when you are.',
+  text:'Oats, seeds, almonds and fresh fruit. Soak it in water or milk, with or without protein powder, and add honey if you like.',
+  cta:'Customise your bowl',act:'startBowl()',cta2:'See the menu',act2:'goMenu()'},
+ {img:'https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=1600&q=80',
+  title:'Order tonight. Breakfast arrives tomorrow.',
+  text:'Pre-order on WhatsApp by '+SITE.cutoff+'. We deliver around '+SITE.areas+'.',
+  cta:'Order now',act:'goMenu()',cta2:'How it works',act2:"document.getElementById('how').scrollIntoView({behavior:'smooth'})"},
+ {img:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1600&q=80',
+  title:'Know exactly what you eat.',
+  text:'Calories and protein are shown on every bowl, so your plan stays on track.',
+  cta:'See the menu',act:'goMenu()'}
+];
+
+/* ---- Live menu from your Google Sheet ('Menu' tab). Change Available to No and the dish turns grey. ---- */
+function normalizeDish(r){
+  const av=String(r.available===undefined?'':r.available).trim().toLowerCase();
+  const status=['soon','coming soon','comingsoon'].includes(av)?'soon':(['no','n','false','0','sold out','soldout','off'].includes(av)?'soldout':'available');
+  const pr=String(r.protein===undefined?'':r.protein).trim();
+  return {id:Number(r.id),name:String(r.name||''),cat:String(r.category||'Breakfast'),price:Number(r.price)||0,cal:Number(r.calories)||0,
+    protein:pr===''?'':(isNaN(Number(pr))?pr:pr+'g protein'),tag:String(r.tag||''),desc:String(r.description||''),img:String(r.imageurl||''),icon:String(r.icon||''),
+    status:status,available:status==='available',
+    options:String(r.options||'').trim().toLowerCase()==='bowl'?BOWL_OPTIONS:undefined};
+}
+async function loadMenu(){
+  try{
+    const res=await Promise.race([fetch(GOOGLE_SHEET_URL+'?action=menu'),new Promise((_,rej)=>setTimeout(()=>rej(new Error('timeout')),6000))]);
+    const data=await res.json();
+    if(data&&data.ok&&Array.isArray(data.dishes)&&data.dishes.length){
+      const list=data.dishes.map(normalizeDish).filter(d=>d.id&&d.name&&(d.price>0||d.status==='soon'));
+      if(list.length)dishes=list;
+    }
+  }catch(e){console.warn('Menu sheet not available, using built-in menu',e)}
+  menuReady=true;renderProducts();updateCart();renderExtras();
+}
+// Set this to the manager's WhatsApp number in international format, digits only, e.g. 919876543210.
+const MANAGER_WHATSAPP='919020338694';
+const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbx7m-ow4e3_RaUOSnZMsW28q5Bt--E_Od57viah8DmzK9TQS3W7yPYQDZETKS7i9440hA/exec';
+let category='All';const cart={};const money=n=>'₹'+n.toLocaleString('en-IN');const byId=id=>dishes.find(d=>d.id===Number(id));
+function renderProducts(){if(!menuReady){document.getElementById('products').innerHTML='<div class="noresults">Loading today\'s menu…</div>';return}const q=document.getElementById('search').value.toLowerCase().trim();const list=dishes.filter(d=>(category==='All'||d.cat===category)&&(!q||(d.name+' '+d.desc+' '+d.cat).toLowerCase().includes(q)));document.getElementById('products').innerHTML=list.length?list.map(d=>`<article class="product${dishQty(d.id)?' item-added':''}${d.available===false?' soldout':''}" data-id="${d.id}"><div class="foodimg"><span class="ph" aria-hidden="true">${dishIcon(d)}</span>${d.img?`<img src="${d.img}" alt="${d.name}" loading="lazy" onerror="this.remove()">`:''}<span class="tag">${d.status==='soon'?'Coming soon':d.available===false?'Sold out today':d.tag}</span></div><div class="productbody"><h3 class="producttitle">${d.name}</h3><div class="desc">${d.desc}</div>${d.status==='soon'||!d.cal?'':'<div class="macros"><span class="macro">'+d.cal+' kcal*</span><span class="macro">'+d.protein+'</span>'+(d.options?'<span class="macro">Customisable</span>':'')+'</div>'}<div class="productfoot"><div class="price">${d.status==='soon'?'<small>Price soon</small>':money(d.price)+' <small>/ serving</small>'}</div>
+
+
+
+${d.available===false?'<span class="soldpill">'+(d.status==='soon'?'Coming soon':'Not available today')+'</span>':`<div class="product-actions">
+  <button class="add"
+    aria-label="Add ${d.name} to bag"
+    onclick="addToCart(${d.id}, this)">+</button>
+
+  <button class="view-added-bag"
+    onclick="openCart()">
+    Bag · ${dishQty(d.id)} →
+  </button>
+</div>`}
+
+
+</div></div></article>`).join(''):'<div class="noresults">Nothing here yet. Message us on WhatsApp to ask about today\'s dishes.</div>';}
+function setCategory(c){category=c;document.querySelectorAll('[data-cat]').forEach(b=>b.classList.toggle('active',b.dataset.cat===c));document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===c));renderProducts()}
+
+function addToCart(id, button) {
+  const d = byId(id);
+  if (d.available===false) return;
+  if (cartCount() >= SITE.maxItems) { toast(limitMsg()); return; }
+  if (d.options) { openCustomize(id); return; }
+  addLine(id, []);
+  toast(d.name + ' added to your bag ✳');
+}
+
+/* ---- Cart lines: one line per dish + chosen options ---- */
+function lineKey(id, opts){ return id + '|' + [...opts].sort().join(','); }
+function addLine(id, opts){
+  if (cartCount() >= SITE.maxItems) { toast(limitMsg()); return false; }
+  const key = lineKey(id, opts);
+  if (!cart[key]) cart[key] = { id: Number(id), opts: [...opts], qty: 0 };
+  cart[key].qty++;
+  updateCart();
+  return true;
+}
+function choiceList(d, opts){
+  if (!d.options) return [];
+  const all = d.options.flatMap(g => g.choices);
+  return opts.map(o => all.find(c => c.id === o)).filter(Boolean);
+}
+function linePrice(l){ const d = byId(l.id); return d.price + choiceList(d, l.opts).reduce((s, c) => s + c.price, 0); }
+function lineOptions(l){ const d = byId(l.id); return choiceList(d, l.opts).map(c => c.name).join(', '); }
+function dishQty(id){ return Object.values(cart).filter(l => l.id === Number(id)).reduce((a, l) => a + l.qty, 0); }
+
+
+function changeQty(key,delta){const l=cart[key];if(!l)return;if(delta>0&&cartCount()+delta>SITE.maxItems){toast(limitMsg());return}l.qty+=delta;if(l.qty<=0)delete cart[key];updateCart()}
+function cartCount(){return Object.values(cart).reduce((a,l)=>a+l.qty,0)}function cartTotal(){return Object.values(cart).reduce((s,l)=>s+linePrice(l)*l.qty,0)}
+function updateCart(){document.getElementById('cartcount').textContent=cartCount();document.getElementById('navtotal').textContent=money(cartTotal());document.getElementById('subtotal').textContent=money(cartTotal());const items=Object.entries(cart);document.getElementById('cartitems').innerHTML=items.length?items.map(([key,l])=>{const d=byId(l.id);const opt=lineOptions(l);const each=linePrice(l);return `<div class="cartrow"><div class="thumb"><span class="ph" aria-hidden="true">${dishIcon(d)}</span>${d.img?`<img src="${d.img}" alt="" onerror="this.remove()">`:''}</div><div><strong>${d.name}</strong>${opt?`<small class="opts">${opt}</small>`:''}<small>${money(each)} each</small><div class="qty"><button onclick="changeQty('${key}',-1)" aria-label="Decrease quantity">−</button><span>${l.qty}</span><button onclick="changeQty('${key}',1)" aria-label="Increase quantity" ${cartCount()>=SITE.maxItems?'disabled':''}>+</button><button class="remove" onclick="changeQty('${key}',-${l.qty})">Remove</button></div></div><strong>${money(each*l.qty)}</strong></div>`}).join(''):'<div class="empty"><div class="big">🥬</div><h3>Your bag is looking fresh.</h3><p>Add a few favourites to get started.</p><button class="primary" onclick="closeCart();document.getElementById(\'menu\').scrollIntoView({behavior:\'smooth\'})">Explore the menu</button></div>';{const ci=document.getElementById('cartitems');if(items.length)ci.insertAdjacentHTML('beforeend','<p class="limitnote">Up to '+SITE.maxItems+' items per order. For bigger orders, message us on WhatsApp.</p>')}document.querySelectorAll('.product[data-id]').forEach(el=>{const n=dishQty(el.dataset.id);el.classList.toggle('item-added',n>0);const b=el.querySelector('.view-added-bag');if(b)b.textContent='Bag · '+n+' →'});document.getElementById('cartbottom').style.display=items.length?'block':'none';if(!items.length)backToBag()}
+function openCart(){document.getElementById('overlay').classList.add('open');document.getElementById('drawer').classList.add('open');document.body.style.overflow='hidden'}function closeCart(){document.getElementById('overlay').classList.remove('open');document.getElementById('drawer').classList.remove('open');document.body.style.overflow=''}function showCheckout(){if(!cartCount()){toast('Add a dish to your bag first');return}document.getElementById('cartview').style.display='none';document.getElementById('checkout').style.display='block';document.getElementById('drawtitle').textContent='Where should we send it?'}function backToBag(){document.getElementById('cartview').style.display='flex';document.getElementById('checkout').style.display='none';document.getElementById('drawtitle').textContent='Your good-food bag'}
+
+
+function sendOrder(e) {
+  e.preventDefault();
+  if(cartCount()>SITE.maxItems){toast(limitMsg());return}
+
+  if (!cartCount()) {
+    toast('Your bag is empty');
+    return;
+  }
+
+  if (!MANAGER_WHATSAPP) {
+    toast('Please configure the business WhatsApp number first.');
+    return;
+  }
+
+  const customer = document.getElementById('customer').value.trim();
+  if (!validatePhone(true)) return;
+  const phone = document.getElementById('ccode').value + ' ' + document.getElementById('phone').value;
+  const address = document.getElementById('address').value.trim();
+  const delivery = document.getElementById('delivery').value;
+  const notes = document.getElementById('notes').value.trim();
+
+  const lines = Object.values(cart).map(l => {
+    const d = byId(l.id);
+    const opt = lineOptions(l);
+    return `• ${d.name} × ${l.qty} — ${money(linePrice(l) * l.qty)}` + (opt ? `\n   ↳ ${opt}` : '');
+  });
+
+  const msg = `❗ *NEW RIGHT BITE ORDER*
+
+*Customer:* ${customer}
+*Phone:* ${phone}
+*Delivery address:* ${address}
+*Preferred meal time:* ${delivery}
+
+*Order items*
+${lines.join('\n')}
+
+*Subtotal: ${money(cartTotal())}*
+*Notes:* ${notes || 'None'}
+
+Please confirm availability, delivery charges and final total. Thank you!`;
+
+  const orderData = {
+    customer: customer,
+    phone: phone,
+    address: address,
+    delivery: delivery,
+    items: lines.join('\n'),
+    subtotal: money(cartTotal()),
+    notes: notes || 'None'
+  };
+
+  // Open WhatsApp in response to the customer's click
+  const whatsappTab = window.open('about:blank', '_blank');
+
+  if (!whatsappTab) {
+    toast('Please allow pop-ups for this website.');
+    return;
+  }
+
+  whatsappTab.document.write('Opening WhatsApp...');
+
+  fetch(GOOGLE_SHEET_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {
+      'Content-Type': 'text/plain;charset=utf-8'
+    },
+    body: JSON.stringify(orderData)
+  })
+  .catch(error => {
+    console.error('Google Sheets request error:', error);
+  })
+  .finally(() => {
+    whatsappTab.location.href =
+      'https://wa.me/' + MANAGER_WHATSAPP +
+      '?text=' + encodeURIComponent(msg);
+
+    toast('WhatsApp opened — please send your order.');
+  });
+}
+
+
+
+
+
+
+
+
+/* ---- Customise pop-up ---- */
+let custom=null;
+function openCustomize(id){
+  const d=byId(id);
+  custom={id:Number(id),sel:{}};
+  d.options.forEach(g=>{custom.sel[g.id]=g.type==='single'?[g.choices[0].id]:[]});
+  document.getElementById('custom').innerHTML=
+    `<div class="customhead"><div><div class="eyebrow">Make it yours</div><h2 id="customtitle">${d.name}</h2></div><button class="close" onclick="closeCustomize()" aria-label="Close">×</button></div>`+
+    `<div class="custombody">${d.options.map(g=>`<fieldset class="optgroup"><legend>${g.title}${g.type==='multi'?' <span>(optional)</span>':''}</legend>${g.choices.map(c=>`<label class="opt"><input type="${g.type==='single'?'radio':'checkbox'}" name="opt-${g.id}" ${custom.sel[g.id].includes(c.id)?'checked':''} onchange="pickOption('${g.id}','${c.id}',this.checked)"><span class="optname">${c.label}</span><span class="optprice">${c.price>0?'+'+money(c.price):c.price<0?'−'+money(-c.price):'Included'}</span></label>`).join('')}</fieldset>`).join('')}</div>`+
+    `<div class="customfoot"><div class="macros" id="custommacros"></div><button class="primary" id="customadd" onclick="confirmCustomize()"></button><p class="hint">*Calories and protein are approximate.</p></div>`;
+  updateCustomize();
+  document.getElementById('coverlay').classList.add('open');
+  document.getElementById('custom').classList.add('open');
+  document.body.style.overflow='hidden';
+  const first=document.querySelector('#custom input');if(first)first.focus();
+}
+function pickOption(gid,cid,checked){
+  const g=byId(custom.id).options.find(x=>x.id===gid);
+  if(g.type==='single'){custom.sel[gid]=[cid]}
+  else{const set=new Set(custom.sel[gid]);checked?set.add(cid):set.delete(cid);custom.sel[gid]=[...set]}
+  updateCustomize();
+}
+function updateCustomize(){
+  const d=byId(custom.id);
+  const chosen=choiceList(d,Object.values(custom.sel).flat());
+  const sum=k=>chosen.reduce((s,c)=>s+c[k],0);
+  document.getElementById('custommacros').innerHTML=`<span class="macro">≈ ${d.cal+sum('cal')} kcal*</span><span class="macro">≈ ${parseInt(d.protein)+sum('protein')}g protein</span>`;
+  document.getElementById('customadd').textContent='Add to bag · '+money(d.price+sum('price'));
+}
+function confirmCustomize(){
+  const d=byId(custom.id);
+  const ok=addLine(custom.id,Object.values(custom.sel).flat());
+  closeCustomize();
+  if(ok)toast(d.name+' added to your bag ✳');
+}
+function closeCustomize(){
+  document.getElementById('coverlay').classList.remove('open');
+  document.getElementById('custom').classList.remove('open');
+  if(!document.getElementById('drawer').classList.contains('open'))document.body.style.overflow='';
+  custom=null;
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCustomize();closeCart()}});
+
+/* ---- Hero carousel ---- */
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let slideTimer=null;
+function buildSlides(){
+  document.getElementById('slides').innerHTML=SLIDES.map((sl,i)=>`<article class="slide" role="group" aria-roledescription="slide" aria-label="${i+1} of ${SLIDES.length}"><img src="${sl.img}" alt="" ${i?'loading="lazy"':''} onerror="this.remove()"><div class="slidecopy">${sl.kicker?`<div class="kicker">${sl.kicker}</div>`:''}${i?'<h2>':'<h1>'}${sl.title}${i?'</h2>':'</h1>'}<p>${sl.text}</p><div class="heroactions"><button class="primary" onclick="${sl.act}">${sl.cta}</button>${sl.cta2?`<button class="secondary" onclick="${sl.act2}">${sl.cta2}</button>`:''}</div></div></article>`).join('');
+  document.getElementById('dots').innerHTML=SLIDES.map((_,i)=>`<button aria-label="Go to slide ${i+1}" onclick="showSlide(${i})"></button>`).join('');
+  const el=document.getElementById('slides');let raf;
+  el.addEventListener('scroll',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(markDot)});
+  const box=el.parentElement;
+  ['mouseenter','focusin','touchstart'].forEach(ev=>box.addEventListener(ev,stopAuto,{passive:true}));
+  ['mouseleave','focusout'].forEach(ev=>box.addEventListener(ev,startAuto));
+  box.addEventListener('touchend',()=>setTimeout(startAuto,6000),{passive:true});
+  document.addEventListener('visibilitychange',()=>document.hidden?stopAuto():startAuto());
+  markDot();startAuto();
+}
+function currentSlide(){const el=document.getElementById('slides');return Math.round(el.scrollLeft/el.clientWidth)}
+function markDot(){const c=currentSlide();document.querySelectorAll('#dots button').forEach((b,i)=>b.setAttribute('aria-current',i===c?'true':'false'))}
+function showSlide(i){const el=document.getElementById('slides');el.scrollTo({left:i*el.clientWidth,behavior:reduceMotion?'auto':'smooth'})}
+function goSlide(d){const n=SLIDES.length;showSlide((currentSlide()+d+n)%n)}
+function startAuto(){if(reduceMotion||slideTimer)return;slideTimer=setInterval(()=>goSlide(1),5500)}
+function stopAuto(){clearInterval(slideTimer);slideTimer=null}
+function goMenu(){document.getElementById('menu').scrollIntoView({behavior:'smooth'})}
+function startBowl(){const d=dishes.find(x=>x.options&&x.available!==false);if(d){openCustomize(d.id)}else{goMenu()}}
+
+/* ---- Phone number: country code (default +91) and digits only, max 10 ---- */
+function setupPhone(){
+  const cc=document.getElementById('ccode'),ph=document.getElementById('phone');
+  cc.addEventListener('input',()=>{cc.value='+'+cc.value.replace(/\D/g,'').slice(0,3);clearPhoneError()});
+  cc.addEventListener('blur',()=>{if(cc.value==='+'||cc.value==='')cc.value='+91'});
+  ph.addEventListener('input',()=>{
+    let d=ph.value.replace(/\D/g,'');
+    if(cc.value==='+91'&&d.length>10){if(d.startsWith('91')&&d.length===12)d=d.slice(2);else if(d.startsWith('0'))d=d.slice(1)}
+    ph.value=d.slice(0,10);clearPhoneError();
+  });
+}
+function clearPhoneError(){document.getElementById('phoneerr').textContent='';document.getElementById('phone').removeAttribute('aria-invalid')}
+function validatePhone(focus){
+  const code=document.getElementById('ccode').value,ph=document.getElementById('phone'),err=document.getElementById('phoneerr');
+  const ok=code==='+91'?/^[6-9]\d{9}$/.test(ph.value):/^\d{6,10}$/.test(ph.value)&&/^\+\d{1,3}$/.test(code);
+  if(ok){clearPhoneError();return true}
+  err.textContent=code==='+91'?'Enter a 10-digit mobile number starting with 6, 7, 8 or 9.':'Enter a valid country code and a phone number of 6 to 10 digits.';
+  ph.setAttribute('aria-invalid','true');if(focus)ph.focus();return false;
+}
+
+function renderExtras(){
+  document.querySelectorAll('.siteareas').forEach(e=>e.textContent=SITE.areas);document.querySelectorAll('.sitecut').forEach(e=>e.textContent=SITE.cutoff);document.querySelectorAll('.sitewin').forEach(e=>e.textContent=SITE.window);
+  const bowl=dishes.find(d=>d.options&&d.available!==false),bp=bowl?bowl.price:149;
+  document.getElementById('planlist').innerHTML=PLANS.map(pl=>`<article class="plan${pl.best?' best':''}">${pl.best?'<span class="ribbon">Best value</span>':''}<h3>${pl.name}</h3><div class="pp">₹${pl.price.toLocaleString('en-IN')}</div><p>${pl.note} · about ₹${Math.round(pl.price/pl.n)} each</p>${bp*pl.n>pl.price?`<p class="save">Save ₹${(bp*pl.n-pl.price).toLocaleString('en-IN')} vs single bowls</p>`:''}<a class="primary" target="_blank" rel="noopener" href="${waLink('Hi Right Bite, I would like the '+pl.name+' ('+pl.note+').')}">Subscribe on WhatsApp</a></article>`).join('');
+  const hi=waLink('Hi Right Bite, I have a question.');document.getElementById('wafloat').href=hi;document.getElementById('ctawa').href=hi;
+  const t=[];if(SITE.fssai)t.push('<span>✅ FSSAI licence no. '+SITE.fssai+'</span>');if(SITE.coach)t.push('<span>💪 Meals checked by '+SITE.coach+', gym coach</span>');document.getElementById('trustrow').innerHTML=t.join('');
+  if(REVIEWS.length){document.getElementById('reviews').hidden=false;document.getElementById('reviewlist').innerHTML=REVIEWS.map(r=>`<blockquote><p>${r.text}</p><cite>${r.name}</cite></blockquote>`).join('')}
+}
+function copyOrder(){const el=document.getElementById('ordercopy');el.select();try{document.execCommand('copy');toast('Order summary copied')}catch(e){toast('Select and copy the order text')}}let toastTimer;function toast(s){const t=document.getElementById('toast');t.textContent=s;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2500)}document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('topline').textContent='Pre-order by '+SITE.cutoff+' for next-morning delivery  ·  '+SITE.areas;renderExtras();setupPhone();buildSlides();renderProducts();updateCart();loadMenu();
+</script>
+<!--sites-preview-theme:start-->
+<style data-sites-preview-theme>:root{--site-secondary:#d25e28 !important}
+
+/* HEADER LOGO SIZE */
+.nav .logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 140px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.nav .logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  max-height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* FOOTER LOGO SIZE */
+.footer .logo,
+.footer-logo {
+  width: 140px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.footer .logo img,
+.footer-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 140px;
+  max-height: 55px;
+  object-fit: contain;
+}
+
+/* MOBILE LOGO SIZE */
+@media (max-width: 620px) {
+  .nav .logo {
+    width: 115px;
+    height: 45px;
+  }
+
+  .nav .logo img {
+    max-width: 115px;
+    max-height: 45px;
+  }
+
+  .footer .logo,
+  .footer-logo {
+    width: 115px;
+    height: 45px;
+  }
+}
+/* Header font bold */
+.nav .navlinks a {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Header logo bold */
+.nav .logo {
+  font-weight: 900;
+}
+
+/* Align the buttons */
+.product-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Hide the Bag button initially */
+.view-added-bag {
+  display: none;
+}
+
+/* Show Bag only on the product that was added */
+.product.item-added .view-added-bag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 30px;
+  background: #216044;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+
+/* CUSTOMISE POP-UP */
+.custom{position:fixed;left:50%;top:50%;width:min(480px,calc(100% - 28px));max-height:calc(100% - 40px);display:flex;flex-direction:column;background:light-dark(#fbfaf5,#171d18);color:inherit;border-radius:22px;z-index:32;box-shadow:0 20px 60px #0004;opacity:0;pointer-events:none;transform:translate(-50%,-46%);transition:.22s}
+.custom.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+#coverlay{z-index:31}
+.customhead{padding:20px 22px 12px;display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.customhead h2{font-family:var(--site-font-heading);font-weight:500;font-size:26px;margin:6px 0 0}
+.custombody{padding:0 22px 8px;overflow:auto}
+.optgroup{border:0;padding:0;margin:14px 0 0;min-width:0}
+.optgroup legend{font-size:13px;font-weight:800;color:#b26e32;padding:0;margin-bottom:8px}
+.optgroup legend span{font-weight:500;color:light-dark(#788174,#adb7a9)}
+.opt{display:flex;align-items:center;gap:10px;border:1px solid light-dark(#dce1d5,#3b453b);border-radius:12px;padding:12px 13px;margin-bottom:8px;cursor:pointer;font-size:13px}
+.opt:has(input:checked){border-color:var(--site-primary);background:light-dark(#edf2e6,#263a2b)}
+.opt input{accent-color:var(--site-primary);width:17px;height:17px;margin:0}
+.opt .optname{flex:1}
+.opt .optprice{font-size:12px;font-weight:700;color:light-dark(#5b6957,#d0dbca)}
+.customfoot{padding:14px 22px 20px;border-top:1px solid light-dark(#e0e4d8,#343c33)}
+.customfoot .macros{margin:0 0 12px}
+.customfoot .primary{width:100%}
+.cartrow small.opts{display:block;color:#b26e32;margin:2px 0}
+@media (prefers-reduced-motion:reduce){.custom{transition:none}}
+
+/* HERO CAROUSEL */
+.slider{position:relative}
+.slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.slides::-webkit-scrollbar{display:none}
+.slide{position:relative;flex:0 0 100%;scroll-snap-align:start;min-height:clamp(430px,64vh,600px);display:flex;align-items:center;background:linear-gradient(120deg,#1f4d34,#3a7655);overflow:hidden;color:#fff}
+.slide>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,36,24,.86) 0%,rgba(14,36,24,.58) 46%,rgba(14,36,24,.05) 82%)}
+.slidecopy{position:relative;z-index:1;padding:40px clamp(22px,6vw,84px);max-width:660px}
+.slidecopy h1,.slidecopy h2{font-family:var(--site-font-heading);font-weight:500;font-size:clamp(34px,5.2vw,62px);line-height:1.04;letter-spacing:-1.6px;margin:0 0 16px}
+.slidecopy p{font-size:16px;line-height:1.7;color:#e6eee2;max-width:470px;margin:0}
+.slide .heroactions{margin-top:26px}
+.slide .primary{background:#fffaf0;color:#1d3a28}
+.slide .secondary{border-color:#ffffff99;color:#fff}
+.slidenav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid #ffffff80;background:#0e2418aa;color:#fff;font-size:26px;line-height:1;z-index:2;padding:0 0 3px}
+.slidenav.prev{left:clamp(10px,3vw,36px)}
+.slidenav.next{right:clamp(10px,3vw,36px)}
+.dots{position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:8px;z-index:2}
+.dots button{width:9px;height:9px;padding:0;border-radius:99px;border:0;background:#ffffff80;transition:width .2s,background .2s}
+.dots button[aria-current="true"]{width:26px;background:#fff}
+@media(max-width:620px){.slidenav{display:none}.slide{align-items:flex-end;min-height:480px}.slide:after{background:linear-gradient(0deg,rgba(14,36,24,.92) 0%,rgba(14,36,24,.6) 55%,rgba(14,36,24,.1) 100%)}.slidecopy{padding-bottom:58px}.slidecopy p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.dots button{transition:none}}
+/* SOLD-OUT DISHES */
+.product.soldout .foodimg img{filter:grayscale(1);opacity:.5}
+.product.soldout .producttitle,.product.soldout .desc,.product.soldout .macros,.product.soldout .price{opacity:.5}
+.product.soldout .tag{background:#e3e4dd;color:#555}
+.product.soldout:hover{transform:none}
+.soldpill{font-size:11px;font-weight:700;padding:8px 11px;border-radius:99px;background:light-dark(#e8e9e1,#2b332b);color:light-dark(#6a7468,#aeb8ab);white-space:nowrap}
+:focus-visible{outline:2px solid #b26e32;outline-offset:2px}
+
+/* BRAND, LOGO AND FIXES */
+:root{--site-primary:#2e7244}
+.logo img{height:56px;width:auto;display:block}
+.footer-logo img{height:92px;width:auto;display:block}
+.eyebrow{color:#a85d00}.eyebrow:before{background:#f39a16}
+.cartrow small.opts{color:#a85d00}
+.slide .primary{background:#f39a16;color:#1b2a1f}
+.kicker{font-size:14px;font-weight:700;color:#f6b04a;margin-bottom:14px}
+.dots button[aria-current="true"]{background:#f39a16}
+.ph{position:absolute;inset:0;display:grid;place-items:center;font-size:54px;background:linear-gradient(135deg,#eef2e4,#dce5cf)}
+.foodimg img{position:relative;z-index:1}
+.tag{z-index:2}
+.product.soldout .ph{filter:grayscale(1);opacity:.6}
+.cartrow>.thumb{position:relative;width:62px;height:62px;border-radius:12px;overflow:hidden}
+.thumb .ph{font-size:28px}
+.cartrow .thumb img{position:absolute;inset:0;width:100%;height:100%;border-radius:0;z-index:1}
+.qty .remove{width:auto;height:auto;border:0;border-radius:6px;padding:4px 6px;margin-left:4px;text-decoration:underline;text-underline-offset:3px;color:#a85d00;font-size:11px}
+.qty button:disabled{opacity:.35;cursor:not-allowed}
+.limitnote{font-size:11px;color:#879184;margin:14px 0 0;line-height:1.5}
+@media(min-width:951px){.categories{grid-template-columns:repeat(5,1fr)}.cat{padding:16px}}
+
+/* PHONE FIELD */
+.phonerow{display:flex;gap:8px}
+.checkout .phonerow #ccode{width:76px;flex:none;text-align:center;padding-left:6px;padding-right:6px}
+.checkout .phonerow #phone{flex:1;min-width:0}
+.fielderr{color:#b3261e;font-size:11px;line-height:1.4;margin-top:6px}
+.fielderr:empty{display:none}
+.checkout input[aria-invalid="true"]{border-color:#b3261e}
+
+/* PROFESSIONAL REDESIGN */
+html{scroll-behavior:smooth}
+.xs{padding:clamp(56px,8vw,96px) clamp(18px,5vw,76px)}
+.xs.tint{background:light-dark(#eef3e6,#1b231c)}
+.xhead{text-align:center;max-width:640px;margin:0 auto 40px}
+.xhead .eyebrow{justify-content:center}
+.xhead h2,.whyh,.cta h2{font-family:var(--site-font-heading);font-weight:500;font-size:clamp(30px,4.4vw,46px);letter-spacing:-1px;line-height:1.1;margin:10px 0 12px}
+.xhead p{margin:0;line-height:1.7;color:light-dark(#5b6957,#b4c0b3)}
+.allergen{font-size:11px;line-height:1.6;color:light-dark(#6f7a6c,#aeb8ab);margin:22px 0 0}
+.band{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:22px clamp(18px,5vw,76px);background:var(--site-primary);color:#fff}
+.band>div{display:flex;gap:13px;align-items:center;font-size:13px;line-height:1.5}
+.band b{display:block;font-size:14px}
+.band i{font-style:normal;font-size:22px;width:46px;height:46px;border-radius:50%;background:#ffffff24;display:grid;place-items:center;flex:none}
+.steps,.why,.plans,.reviews{max-width:1100px;margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{position:relative;text-align:center;padding:30px 22px;border-radius:26px;background:light-dark(#fffefa,#202720);border:1px solid light-dark(#e0e3d8,#343c33);transition:.2s}
+.step:hover{transform:translateY(-4px);box-shadow:0 16px 32px #0001}
+.step svg{width:120px;height:92px;margin-bottom:10px}
+.step .n{position:absolute;top:16px;left:18px;width:30px;height:30px;border-radius:50%;background:#f39a16;color:#1b2a1f;font-weight:800;font-size:13px;display:grid;place-items:center}
+.step h3{margin:0 0 8px;font-size:18px}
+.step p,.tile p{margin:0;font-size:13px;line-height:1.7;color:light-dark(#5b6957,#b4c0b3)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center}
+.why .art{display:grid;place-items:center;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f39a1633,#7bad3226 55%,transparent 70%)}
+.why .art svg{width:78%}
+.whyh{margin-top:12px}
+.tile{display:flex;gap:14px;margin-top:20px}
+.tile i{font-style:normal;font-size:22px;width:48px;height:48px;border-radius:16px;background:light-dark(#fffefa,#202720);display:grid;place-items:center;flex:none;box-shadow:0 4px 12px #0000000f}
+.tile b{display:block;margin-bottom:3px}
+.trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.trust span{font-size:12px;font-weight:700;padding:8px 13px;border-radius:99px;background:light-dark(#fffefa,#202720)}
+.plans{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:820px}
+.plan{position:relative;text-align:center;padding:34px 24px;border-radius:26px;border:1px solid light-dark(#e0e3d8,#343c33);background:light-dark(#fffefa,#202720)}
+.plan.best{border:2px solid #f39a16}
+.ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#f39a16;color:#1b2a1f;font-size:11px;font-weight:800;padding:5px 13px;border-radius:99px}
+.plan h3{margin:0 0 8px}
+.pp{font-family:var(--site-font-heading);font-size:44px;letter-spacing:-1px}
+.plan p{margin:6px 0;font-size:13px;color:light-dark(#5b6957,#b4c0b3)}
+.plan .save{color:#a85d00;font-weight:700}
+.plan .primary{display:inline-block;margin-top:14px;text-decoration:none;text-align:center}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.reviews blockquote{margin:0;padding:24px;border-radius:22px;background:light-dark(#fffefa,#202720)}
+.reviews cite{display:block;margin-top:10px;font-size:12px;font-weight:700;font-style:normal}
+.faq{max-width:760px;margin:0 auto}
+.faq details{border:1px solid light-dark(#e0e3d8,#343c33);border-radius:16px;padding:16px 20px;margin-bottom:10px;background:light-dark(#fffefa,#202720)}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";color:#f39a16;font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin:12px 0 0;font-size:13px;line-height:1.7;color:light-dark(#5b6957,#b4c0b3)}
+.cta{text-align:center;background:linear-gradient(135deg,#2e7244,#1f4d34);color:#fff}
+.cta p{margin:0 0 22px;color:#e6eee2}
+.cta .heroactions{justify-content:center;display:flex;gap:12px;flex-wrap:wrap}
+.cta .primary{background:#f39a16;color:#1b2a1f}
+.cta .secondary{border:1px solid #ffffff99;color:#fff;text-decoration:none;display:inline-block}
+.wa{position:fixed;right:18px;bottom:18px;z-index:20;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 22px #0004;transition:transform .2s}
+.wa:hover{transform:scale(1.08)}
+@media(max-width:820px){.band,.steps,.why,.plans{grid-template-columns:1fr}.why .art{max-width:300px;margin:0 auto}}
+</style>
+
+
+<script type="application/json" data-sites-preview-theme>{"appearance":"custom","primary":"#245b3e","secondary":"#d25e28","background":"#fbfaf5","typography":"original","spacing":null,"roundness":null,"headingScale":null,"decorationOpacity":null}</script>
+<!--sites-preview-theme:end-->
+</body></html>
