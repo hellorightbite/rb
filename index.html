@@ -144,7 +144,8 @@ async function loadMenu(){
 }
 // Set this to the manager's WhatsApp number in international format, digits only, e.g. 919876543210.
 const MANAGER_WHATSAPP='919020338694';
-const GOOGLE_SHEET_URL = 'https://script.google.com/macros/s/AKfycbx7m-ow4e3_RaUOSnZMsW28q5Bt--E_Od57viah8DmzK9TQS3W7yPYQDZETKS7i9440hA/exec';
+const GOOGLE_SHEET_URL = 'https://script.google.com/u/0/home/projects/1ODI8XkYi4GkClF4qvAFSIs92zGZaf9LIAtTjS1AhbZEHF9V6Ug0f4uI6/exec';
+  //'https://script.google.com/macros/s/AKfycbx7m-ow4e3_RaUOSnZMsW28q5Bt--E_Od57viah8DmzK9TQS3W7yPYQDZETKS7i9440hA/exec';
 let category='All';const cart={};const money=n=>'₹'+n.toLocaleString('en-IN');const byId=id=>dishes.find(d=>d.id===Number(id));
 function renderProducts(){if(!menuReady){document.getElementById('products').innerHTML='<div class="noresults">Loading today\'s menu…</div>';return}const q=document.getElementById('search').value.toLowerCase().trim();const list=dishes.filter(d=>(category==='All'||d.cat===category)&&(!q||(d.name+' '+d.desc+' '+d.cat).toLowerCase().includes(q)));document.getElementById('products').innerHTML=list.length?list.map(d=>`<article class="product${dishQty(d.id)?' item-added':''}${d.available===false?' soldout':''}" data-id="${d.id}"><div class="foodimg"><span class="ph" aria-hidden="true">${dishIcon(d)}</span>${d.img?`<img src="${d.img}" alt="${d.name}" loading="lazy" onerror="this.remove()">`:''}<span class="tag">${d.status==='soon'?'Coming soon':d.available===false?'Sold out today':d.tag}</span></div><div class="productbody"><h3 class="producttitle">${d.name}</h3><div class="desc">${d.desc}</div>${d.status==='soon'||!d.cal?'':'<div class="macros"><span class="macro">'+d.cal+' kcal*</span><span class="macro">'+d.protein+'</span>'+(d.options?'<span class="macro">Customisable</span>':'')+'</div>'}<div class="productfoot"><div class="price">${d.status==='soon'?'<small>Price soon</small>':money(d.price)+' <small>/ serving</small>'}</div>
 
