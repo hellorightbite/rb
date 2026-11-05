@@ -297,7 +297,7 @@ Please confirm availability, delivery charges and final total. Thank you!`;
 
   const orderData = {
     customer: customer,
-    phone: phone,
+    phone: "'" + phone,
     address: address,
     delivery: delivery,
     items: lines.join('\n'),
